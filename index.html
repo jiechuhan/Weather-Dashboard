@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="container p-1 pt-5">
+        <h1 class="header bg-dark text-light text-center p-3">Weather Dashboard</h1>
+        <div class="row">
+            <div class="col-sm-3">
+                <h3 class="text-dark">Search for a City:</h3>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control input" placeholder="City" aria-label="Recipient's username"
+                        aria-describedby="button-addon2" id="search">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                </div>
+                <div class="card border text-dark p-3 cityCard"></div>
+            </div>
+            <div class="col-sm-9">
+                <div class="card">
+                    <div class="card-body text-dark">
+                        <h3 class="city">City</h3>
+                        <p class="temperature mt-2">Temperature:</p>
+                        <p class="humidity">Humidity:</p>
+                        <p class="wind">Wind Speed:</p>
+                        <p class="uv">UV Index:</p>
+                    </div>
+                </div>
+                <div class="jumbotron jumbotron-fluid mt-5">
+                <!-- <div class="card mt-5 p-2"> -->
+                    <div class="container">
+                        <h3 class="display-9 pl-1 mb-5 text-dark">5-Day Forecast:</h3>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card-body bg-primary">
+                                    <h6 class="card-subtitle mb-2 text-light" id="1d">Date</h6>
+                                    <p class="card-text text-light" id="1t">Temp:</p>
+                                    <p class="card-text text-light" id="1h">Humidity:</p>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card-body bg-primary">
+                                    <h6 class="card-subtitle mb-2 text-light" id="2d">Date</h6>
+                                    <p class="card-text text-light" id="2t">Temp:</p>
+                                    <p class="card-text text-light" id="2h">Humidity:</p>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card-body bg-primary">
+                                    <h6 class="card-subtitle mb-2 text-light" id="3d">Date</h6>
+                                    <p class="card-text text-light" id="3t">Temp:</p>
+                                    <p class="card-text text-light" id="3h">Humidity:</p>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card-body bg-primary">
+                                    <h6 class="card-subtitle mb-2 text-light" id="4d">Date</h6>
+                                    <p class="card-text text-light" id="4t">Temp:</p>
+                                    <p class="card-text text-light" id="4h">Humidity:</p>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card-body bg-primary">
+                                    <h6 class="card-subtitle mb-2 text-light" id="5d">Date</h6>
+                                    <p class="card-text text-light" id="5t">Temp:</p>
+                                    <p class="card-text text-light" id="5h">Humidity:</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+</body>
+
+</html>
