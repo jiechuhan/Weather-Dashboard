@@ -89,6 +89,7 @@ function renderCities(cities) {
         });
     }
 }
+
 function renderEverything() {
     renderCurrentWeather(allTheData.currentWeather);
     renderUvIndex(allTheData.uvIndex);
@@ -150,6 +151,7 @@ $(document).ready(function () {
     } catch (error) {
         debugger;
     }
+
     $(".btn").on("click", function () {
 
         // show today's info
